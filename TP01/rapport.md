@@ -18,4 +18,7 @@ jai continué par une analyse du fichier avec la command "file"
 ![alt text](https://github.com/TekHonore/FORENSIC_TP_TEKOUHA_Honore/blob/main/TP01/Icones%20tp/INFO%20File.png)
 ce qui ma revelé que le fichier est un "DOS/MBR boot sector" qui signifie que le fichier est un executable bootable il est aussi mentionné quil ya des secteurs disimulé "hidden sectors 2048"
 
-J’ai décidé de procédé différemment avec la commande ' minfo -i usb.dd'
+J’ai décidé de procédé différemment avec la commande ' minfo -i rapport.md' ce qui na rien donner appart m'infoermer qu'il ya une image.
+j'ai par la suite installer l'outil forensique foremost qui permet de faire une annalyse du fichier et restorer les fichiers supprimé avec la commande  "foremost rapport.md"
+par la suite ca qui ma permit de recover un fichier image super sympa.
+![alt text](https://github.com/TekHonore/FORENSIC_TP_TEKOUHA_Honore/blob/main/TP01/Icones%20tp/image%20bosh.png)
