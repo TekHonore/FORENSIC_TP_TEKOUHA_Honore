@@ -50,7 +50,7 @@ permissions et permission d’Access **comme le démontre l’image suivante
 L’attaquant a donc pu créer ou modifier une tache planifier ou un script.
 
 L’attaquant a par la suite utilisée la commande `zip -r --password $(cat /tmp/mypassword) bosch_cyber_tools.zip 
-/home/b0sch/bosch_cyber_tools` qui la permis d’archivé les mots de passe présent dans le fichier temporaire et les a enregistré dans ** bosch_cyber_tools** qui se trouve dans /home/b0sch
+/home/b0sch/bosch_cyber_tools qui la permis d’archivé les mots de passe présent dans le fichier temporaire et les a enregistré dans ** bosch_cyber_tools** qui se trouve dans /home/b0sch. puis il le deplace dans **opt/leak** avec la commande `mv` et le supprime par la suite avec `rm`. 
 
 ![alt text](https://github.com/TekHonore/FORENSIC_TP_TEKOUHA_Honore/blob/main/TP03/Images/04%20bosch%20cyber%20tol.png)
 
