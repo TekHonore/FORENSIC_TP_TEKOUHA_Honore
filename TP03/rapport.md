@@ -21,11 +21,11 @@ eu à ouvrir des sessions pour cela j’ai utilisé les commandes **(w,who et la
 comme le montre l’image qui suit l'historique Nous affiche qu’une seule session de l'utilisateur b0sch 
 ouverte à cette date qui est la nôtre **b0sch  2023-02-15 08:40 (172.18.0.1)**.
 
-![alt text]()
+![alt text](https://github.com/TekHonore/FORENSIC_TP_TEKOUHA_Honore/blob/main/TP03/Images/01%20W%2CWHO%2CLAST.png)
 
 -Par la suite j’ai décidé de faire une analyse de l’ensemble des historiques sur le PC afin de retracer les actions effectuées par l’attaquant en commençant par des commandes qui ont été écrits sur la machine au préalable pour ceux j’ai utilisé la commande **(history)** qui permet d’afficher l’historique des commandes saisie sur le terminal. Il apparaît qu’un ensemble de commande ont été saisie avant la connexion donc n’ont pas été exécuter par nous comme l’illustre l’image en dessous.
 
-![alt text]()
+![alt text](https://github.com/TekHonore/FORENSIC_TP_TEKOUHA_Honore/blob/main/TP03/Images/Histo2cm.png)
 
 
 Après analyse de l’ensemble des commandes j’ai remarqué que l’inconnue a effectué exactement 15 commandes parmi les quels j’ai retenue ;
@@ -44,7 +44,7 @@ root. Ainsi il pourra les voler
 **`ls -lah`** grace a cette commande L’attaquant a par la suite effectuer un listing de façon plus détaillé les fichiers et répertoires contenu dans **/home/b0sh** avec **leurs taille 
 permissions et permission d’Access **comme le démontre l’image suivante
 
-![alt text]()
+![alt text](https://github.com/TekHonore/FORENSIC_TP_TEKOUHA_Honore/blob/main/TP03/Images/03%20LS-LH.png)
 
 **`crontab -e`** Qui permet de crée des taches planifiées dans le but d’effectuer des actions automatiques de façon réguliers (lancer des scripts, des commandes etc…) a des heures spécifiques. 
 L’attaquant a donc pu créer ou modifier une tache planifier ou un script.
@@ -52,14 +52,14 @@ L’attaquant a donc pu créer ou modifier une tache planifier ou un script.
 L’attaquant a par la suite utilisée la commande `zip -r --password $(cat /tmp/mypassword) bosch_cyber_tools.zip 
 /home/b0sch/bosch_cyber_tools` qui la permis d’archivé les mots de passe présent dans le fichier temporaire et les a enregistré dans ** bosch_cyber_tools** qui se trouve dans /home/b0sch
 
-![alt text]()
+![alt text](https://github.com/TekHonore/FORENSIC_TP_TEKOUHA_Honore/blob/main/TP03/Images/04%20bosch%20cyber%20tol.png)
 
 
 
 J'ai ensuite acceder au repertoire **/opt/leak** ou est stocke le fichier bosch_cyber_tools.zip
 et tempté de le decompressé ce qui etait impossible vue qu'il etait proteger par mot de passe
 
-![alt text]()
+![alt text](https://github.com/TekHonore/FORENSIC_TP_TEKOUHA_Honore/blob/main/TP03/Images/05%20zipmdp.png)
 
 
  
