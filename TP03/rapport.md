@@ -70,8 +70,7 @@ L'ensemble des outils utilisé :
  
  
 # RESULTATS
-Il apparait que le systeme a bien ete piraté et altére
- 
+Il apparait que le systeme a bien ete piraté et altére la commande `history`a fait office dindicateur de compromission 
 # CONCLUSION
 A la suite de lannalyse nous avons decouvert que lataquant cest introduit et a part la suite tempter de dissimuler ces traces.
  
